@@ -553,7 +553,7 @@ BigAlien = function () {
   };
 
   BigAlien.prototype.collision = function (other) {
-    if (other.name == "bullet") Game.score += 200;
+    if (other.name == "bullet") Game.score += 300;
     SFX.explosion().play();
     Game.explosionAt(other.x, other.y);
     this.visible = false;
